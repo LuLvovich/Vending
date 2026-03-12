@@ -3,7 +3,6 @@
 #define PRODUCT_LIQUID_SOLID_H
 
 #include <string>
-#include <ostream>
 
 class Product{
 protected:
