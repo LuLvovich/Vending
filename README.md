@@ -20,3 +20,26 @@
 - CMake 
 - Компилятор C++ с поддержкой C++ 23
 
+### Этапы сборки
+```bash
+# 1. Клонируем репозиторий и переходим внутрь проекта
+git clone https://github.com/LuLvovich/Vending.git
+cd Vending
+
+# 2. Создаём папку сборки и переходим в папку сборки
+mkdir build
+cd build
+
+# 3. Генерируем Makefile / проект
+cmake ..
+
+# 4. Компилируем
+make -j4          # Linux / macOS
+cmake --build .   # универсальный способ (подходит для Windows)
+```
+### Запуск
+```bash
+./vending          # Linux / macOS
+.\vending.exe      # Windows
+```
+
