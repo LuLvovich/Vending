@@ -21,7 +21,7 @@ public:
 
 
     Inventory(Inventory&&) = delete;
-    Inventory& operator=(Inventory&&) = delete;
+    Inventory& operator=(Inventory&&) = default;
 
 
     void AddLiquidProduct(int id, const std::string& name, int price, char size, int volume, bool sparkling);

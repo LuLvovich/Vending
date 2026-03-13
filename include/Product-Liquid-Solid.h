@@ -38,6 +38,7 @@ public:
     void ChangeVolume(int NewVolume);
     int GetVolumeML() const;
     bool GetIsSparkling() const;
+	~LiquidProduct() = default;
 };
 
 class SolidProduct: public Product{
@@ -49,6 +50,7 @@ public:
     void ChangeMass(int NewMass);
     int GetMass() const;
     bool GetCarefulDisp() const;
+    ~SolidProduct() = default;
 };
 
 #endif
