@@ -41,14 +41,16 @@ cmake --build .
 ```
 ### Запуск
 ```bash
-./vending          # Linux / macOS
-.\vending.exe      # Windows
+# Linux / macOS
+./vending
+# Windows         
+.\vending.exe      
 ```
 ```
 # Unit-тесты
 # Linux / macOS
 ./tests
-# Windowы
+# Windows
 .\tests.exe        
 ```
 ## Структура проекта
@@ -72,7 +74,7 @@ Vending/
 │   ├── VendingMachine.cpp
 │   ├── MoneyHandler.cpp
 │   └── ChangeCalculator.cpp
-├── tests/                   # Google Test
+├── tests/                   # Google Tests
 │   ├── test_inventory.cpp
 │   ├── test_main.cpp
 │   ├── test_product.cpp
