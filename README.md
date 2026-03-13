@@ -34,8 +34,10 @@ cd build
 cmake ..
 
 # 4. Компилируем
-make -j4          # Linux / macOS
-cmake --build .   # универсальный способ (подходит для Windows)
+# Linux / macOS
+make -j4
+# универсальный способ (подходит для Windows)
+cmake --build . 
 ```
 ### Запуск
 ```bash
@@ -43,6 +45,7 @@ cmake --build .   # универсальный способ (подходит д
 .\vending.exe      # Windows
 ```
 ## Структура проекта
+
 Vending/
 ├── include/                 # Заголовочные файлы
 │   ├── VendingMachine.h
@@ -72,3 +75,37 @@ Vending/
 └── README.md
 
 ## Команды для CLI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
