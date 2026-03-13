@@ -1,5 +1,5 @@
 # **Vending machine emulator by *Gamala/Davydov/Fedorenko***
-Консольное приложение на **C++ 23**, имитирующее работу вендингового автомата. Поддерживает товары разных видов (жидкие и твердые), обработку денежных данных, расчет сдачи, инвентарь и админ-панель.
+Консольное приложение на **C++23**, имитирующее работу вендингового автомата. Поддерживает товары разных видов, обработку денежных данных, расчет сдачи, инвентарь и админ-панель.
 
 ---
 Основные возможности
@@ -18,7 +18,7 @@
 
 ### Минимальные требования
 - CMake 
-- Компилятор C++ с поддержкой C++ 23
+- Компилятор C++ с поддержкой C++23
 
 ### Этапы сборки
 ```bash
@@ -42,4 +42,33 @@ cmake --build .   # универсальный способ (подходит д
 ./vending          # Linux / macOS
 .\vending.exe      # Windows
 ```
+## Структура проекта
+Vending/
+├── include/                 # Заголовочные файлы
+│   ├── VendingMachine.h
+│   ├── Inventory.h
+│   ├── InventoryReport.h
+│   ├── MoneyHandler.h
+│   ├── ChangeCalculator.h
+│   ├── AdminPanel.h
+│   ├── CLIParser.h
+│   └── Product-Liquid-Solid.h
+├── src/                     # Реализация классов
+│   ├── Inventory.cpp
+│   ├── Product-Liquid-Solid.cpp
+│   ├── CLIParser.cpp
+│   ├── AdminPanel.cpp
+│   ├── InventoryReport.cpp
+│   ├── VendingMachine.cpp
+│   ├── MoneyHandler.cpp
+│   └── ChangeCalculator.cpp
+├── tests/                   # Google Test
+│   ├── test_inventory.cpp
+│   ├── test_main.cpp
+│   ├── test_product.cpp
+│   └── test_vending.cpp
+├── main.cpp
+├── CMakeLists.txt
+└── README.md
 
+## Команды для CLI
