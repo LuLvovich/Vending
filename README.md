@@ -44,8 +44,13 @@ cmake --build .
 ./vending          # Linux / macOS
 .\vending.exe      # Windows
 ```
+```
+# Unit-тесты
+./tests            # Linux / macOS
+.\tests.exe        # Windows
+```
 ## Структура проекта
-
+```
 Vending/
 ├── include/                 # Заголовочные файлы
 │   ├── VendingMachine.h
@@ -73,37 +78,9 @@ Vending/
 ├── main.cpp
 ├── CMakeLists.txt
 └── README.md
+```
 
 ## Команды для CLI
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
